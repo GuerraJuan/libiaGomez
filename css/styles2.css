@@ -1,0 +1,91 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;  line-height: 1.4;
+  line-height: 1.4;
+  color: darkslategrey;
+}
+
+p {
+  text-align: left;
+}
+
+h3,
+a {
+color: #093a58;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+footer {
+  background: rgb(91, 97, 97);
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+.logo {
+  width: 150px;
+  
+}
+
+.intro {
+  background: #2E96D2;    /*---center / cover no-repeat url("../imgs/header.jpg");---*/
+  background-image: linear-gradient(rgba(0, 0, 255, 0.2), rgba(255, 255, 0, 0.2));
+  background-blend-mode: multiply;
+  color: #fff;
+  padding-bottom: 1em;
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+.img-container {
+  margin-left: -7%;
+  margin-right: -7%;
+	line-height: 0;
+  position: relative;
+}
+
+.subtitle {
+	color: #fff;
+  height: 3em;
+  margin: 0;	
+	background: rgba(210,210,210, .8);
+  
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+}
+
+.main-nav {
+  display: none;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+  .container {
+    width: 50%;
+  }
+
+}

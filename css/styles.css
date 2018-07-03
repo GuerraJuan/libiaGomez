@@ -1,0 +1,113 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.4;
+    color: darkslategrey;
+}
+
+p {
+    text-align: justify;
+    color: black
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wcImg {
+    object-fit: contain;
+    width: 640px;
+    height: 480px;
+}
+
+footer {
+    background: rgb(91, 97, 97);
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+.container {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.main-header {
+    /*background: #93D9CA center / cover no-repeat url("../imgs/header.jpg");
+    background-image: linear-gradient(rgba(0, 0, 255, 0.2), rgba(255, 255, 0, 0.2));
+    background-blend-mode: difference;*/
+    height: 130px;
+}
+
+.in-header {
+    background: white;
+}
+
+a {
+    display: block;
+    padding: 0.625em; /* 10 px en em */
+}
+
+.main-nav li{
+    display: inline-block;    
+    border-right: #093a58 1px solid;
+    text-align: center;
+    margin: auto;
+}
+
+li:last-child {
+    border: none;
+}
+
+.title {
+    font-family: Futura,"Trebuchet MS",Arial,sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: rgb(150, 33, 52);
+    background: white;
+    padding: .3em 2em;
+    margin: 0;
+    display: inline-block;
+}
+
+.logo {
+    display: block;
+    float: right;
+    vertical-align: center;
+}
+
+.intro {
+    background: #2D97D3;    /*---center / cover no-repeat url("../imgs/header.jpg");---*/
+    /* background-image: linear-gradient(rgba(0, 0, 255, 0.2), rgba(255, 255, 0, 0.2));
+    background-blend-mode: multiply; */
+    
+    height: 380px;
+    margin-bottom: 1em;
+    text-align: end;
+}
+
+.intro-header {
+    font-size: 4em;
+    margin: 0;
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+    text-align: end
+}
+
