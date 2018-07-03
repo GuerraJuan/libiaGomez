@@ -65,7 +65,7 @@ footer {
 
 .subtitle {
 	color: #fff;
-  height: 3em;
+  height: 5em;
   margin: 0;	
 	background: rgba(210,210,210, .8);
   
@@ -73,6 +73,7 @@ footer {
   bottom: 50%;
   width: 100%;
 }
+
 
 .main-nav {
   display: none;
