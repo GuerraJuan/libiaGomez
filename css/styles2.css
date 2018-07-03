@@ -9,13 +9,15 @@
 body {
   font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;  line-height: 1.4;
   line-height: 1.4;
-  color: darkslategrey;
+  color: rgb(47, 67, 79);
 }
 
 p {
   text-align: left;
 }
 
+h1,
+h2,
 h3,
 a {
 color: #093a58;
@@ -36,18 +38,44 @@ footer {
 /* ================================= 
   Base Layout Styles
 ==================================== */
-
-.logo {
-  width: 150px;
-  
+.main-header {
+  text-align: center;
+  margin: auto;
+  height: 100vh;
+  position: relative;
+  box-shadow: 0 1px 4px rgba(0,0,0,.4);
 }
 
 .intro {
-  background: #2E96D2;    /*---center / cover no-repeat url("../imgs/header.jpg");---*/
+  background: rgba(46, 150, 210, 0.8);    /*---center / cover no-repeat url("../imgs/header.jpg");---*/
   background-image: linear-gradient(rgba(0, 0, 255, 0.2), rgba(255, 255, 0, 0.2));
   background-blend-mode: multiply;
   color: #fff;
-  padding-bottom: 1em;
+  padding: 1.5em 0;
+  height: calc(100vh-350px);
+
+  position: absolute;
+  bottom: 1.5rem;
+  left: 0;
+  width: 70%;
+}
+
+.logo {
+  height: 100px;
+  max-width: 350px;
+  margin: 2em 0;
+}
+
+.main-nav {
+  display: none;
+}
+
+.title {
+  color: #fff;
+}
+
+.more {
+  text-align: right;
 }
 
 .container {
@@ -56,11 +84,13 @@ footer {
   margin: auto;
 }
 
+
 .img-container {
-  margin-left: -7%;
-  margin-right: -7%;
 	line-height: 0;
   position: relative;
+  margin: 2rem 0 0 0;
+  padding: 1rem 0 0 0;
+  border-top: 1px solid rgb(47, 67, 79);
 }
 
 .subtitle {
@@ -74,11 +104,19 @@ footer {
   width: 100%;
 }
 
-
-.main-nav {
-  display: none;
+.header-bg {
+  background: center/cover no-repeat url("../imgs/headerBg.jpg") #093a58;
+  height: calc(100vh - 170px);
 }
 
+.credits {
+  display: block;
+  color:rgb(47, 67, 79);
+  text-align: right;
+  margin: 0.5em 1em;
+  font-size: 0.5em;
+  font-style: italic;
+}
 
 /* ================================= 
   Media Queries
